@@ -1,0 +1,4270 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "storeLocation",
+        "type": "ContentType",
+        "createdAt": "2019-04-18T21:58:39.220Z",
+        "updatedAt": "2019-04-24T16:45:20.839Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2019-04-24T16:45:20.839Z",
+        "firstPublishedAt": "2019-04-18T21:58:39.709Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "streetAddress",
+      "name": "Store Location",
+      "description": "",
+      "fields": [
+        {
+          "id": "id",
+          "name": "ID",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "streetAddress",
+          "name": "Street Address",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "city",
+          "name": "City",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "state",
+          "name": "State",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "zipCode",
+          "name": "Zip Code",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^\\d{5}$|^\\d{5}-\\d{4}$}"
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "phoneNumber",
+          "name": "Phone Number",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "geoLocation",
+          "name": "Geo Location",
+          "type": "Location",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "profileType",
+          "name": "Profile Type",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "restaurantProfileType"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "mealDayPartsServedHere",
+          "name": "Meal Day Parts Served Here",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "mealDayPart"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "promotions",
+          "name": "Promotions",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "promotion"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "aboutText",
+          "name": "About Text",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "nodes": {
+              }
+            },
+            {
+              "enabledMarks": [
+              ],
+              "message": "Marks are not allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "hyperlink",
+                "entry-hyperlink",
+                "heading-3",
+                "embedded-entry-inline"
+              ],
+              "message": "Only link to Url, link to entry, heading 3, and inline entry nodes are allowed"
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "menuItem",
+        "type": "ContentType",
+        "createdAt": "2019-04-18T22:09:10.631Z",
+        "updatedAt": "2019-04-24T16:53:57.535Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2019-04-24T16:53:57.535Z",
+        "firstPublishedAt": "2019-04-18T22:09:10.952Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Menu Item",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "categories",
+          "name": "Categories",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "foodCategory"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "calories",
+          "name": "Calories",
+          "type": "Integer",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "price",
+          "name": "Price",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "regexp": {
+                "pattern": "^\\d{1,2}(?:\\.\\d{1,2})?$",
+                "flags": null
+              },
+              "message": "Please enter a valid price less than $100 without the dollar sign"
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "mealDayPart",
+          "name": "Meal Day Part",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "mealDayPart"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        },
+        {
+          "id": "youMightLike",
+          "name": "You Might Like",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [
+              {
+                "linkContentType": [
+                  "menuItem"
+                ]
+              }
+            ],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "infoHeader",
+          "name": "Info - Header",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoSimple",
+          "name": "Info - Simple",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "infoDetailed",
+          "name": "Info - Detailed",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "promotion",
+        "type": "ContentType",
+        "createdAt": "2019-04-18T22:38:18.384Z",
+        "updatedAt": "2019-04-18T22:38:18.784Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-04-18T22:38:18.784Z",
+        "firstPublishedAt": "2019-04-18T22:38:18.784Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Promotion",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "offerDetails",
+          "name": "Offer Details",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "expiresOn",
+          "name": "Expires On",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "mealDayPart",
+        "type": "ContentType",
+        "createdAt": "2019-04-19T20:12:08.003Z",
+        "updatedAt": "2019-04-19T20:12:08.469Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-04-19T20:12:08.469Z",
+        "firstPublishedAt": "2019-04-19T20:12:08.469Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Meal Day Part",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "foodCategory",
+        "type": "ContentType",
+        "createdAt": "2019-04-19T21:18:53.674Z",
+        "updatedAt": "2019-04-19T21:18:54.065Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2019-04-19T21:18:54.065Z",
+        "firstPublishedAt": "2019-04-19T21:18:54.065Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Food Category",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "restaurantProfileType",
+        "type": "ContentType",
+        "createdAt": "2019-04-24T16:44:33.476Z",
+        "updatedAt": "2019-04-24T16:51:22.315Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-04-24T16:51:22.315Z",
+        "firstPublishedAt": "2019-04-24T16:44:33.802Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "displayField": "name",
+      "name": "Restaurant Profile Type",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2019-04-18T21:58:39.842Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-24T16:45:21.376Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "storeLocation",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "id",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "streetAddress",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "city",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "state",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "zipCode",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "phoneNumber",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "geoLocation",
+          "widgetId": "locationEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "profileType",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "mealDayPartsServedHere",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "promotions",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "aboutText",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 16,
+        "createdAt": "2019-04-18T22:09:11.196Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-24T16:53:58.127Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "menuItem",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "categories",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryLinksEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "calories",
+          "widgetId": "numberEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "price",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "mealDayPart",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "youMightLike",
+          "settings": {
+            "bulkEditing": false
+          },
+          "widgetId": "entryCardsEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "infoHeader",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "infoSimple",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "infoDetailed",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-04-18T22:38:19.022Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-18T22:38:19.623Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "promotion",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "offerDetails",
+          "widgetId": "multipleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "expiresOn",
+          "settings": {
+            "ampm": "12",
+            "format": "timeZ"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-04-19T20:12:08.615Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-19T20:12:09.101Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "mealDayPart",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2019-04-19T21:18:54.193Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-19T21:18:54.740Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "foodCategory",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "p8n2b8w1uzso",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2019-04-24T16:44:33.931Z",
+        "createdBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-04-24T16:51:22.755Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4nBMLBg2AZDDtagkOVKyNg",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "restaurantProfileType",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "wkIG0L83Kiy2UH9YbxaDm",
+        "type": "Entry",
+        "createdAt": "2019-04-19T20:23:09.894Z",
+        "updatedAt": "2019-04-19T20:25:52.749Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-04-19T20:25:52.749Z",
+        "firstPublishedAt": "2019-04-19T20:25:52.749Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "promotion"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "15% OFF ONE TACO PARTY PACK"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6q3yG3z4JcayE7hyF95Qln"
+            }
+          }
+        },
+        "offerDetails": {
+          "en-US": "Tacos deserve more than just Tuesday. Get 15% off one Party Pack when you order online or on the app through June 8. Valid for in-store pick up only."
+        },
+        "expiresOn": {
+          "en-US": "2019-06-08T23:59-07:00"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4Fd5DE0EcsAE9bNluITQiq",
+        "type": "Entry",
+        "createdAt": "2019-04-19T20:26:15.828Z",
+        "updatedAt": "2019-04-19T20:27:13.378Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 26,
+        "publishedAt": "2019-04-19T20:27:13.378Z",
+        "firstPublishedAt": "2019-04-19T20:27:13.378Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "promotion"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "FREE SMALL MOUNTAIN DEW BAJA BLAST ZERO SUGAR"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5ZSINlpEd25udWKsas0Bfv"
+            }
+          }
+        },
+        "offerDetails": {
+          "en-US": "The best things in life are sugar free. Get one free small Mountain Dew® Baja Blast™ Zero Sugar with any purchase when you order online or on the app through May 11."
+        },
+        "expiresOn": {
+          "en-US": "2019-05-11T23:59-07:00"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "5up1qoN874nkkWNyAGXmra",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:19:46.162Z",
+        "updatedAt": "2019-04-19T21:21:15.314Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-04-19T21:21:15.314Z",
+        "firstPublishedAt": "2019-04-19T21:20:47.023Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "foodCategory"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Tacos"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4gaXFGnfNq8zQxZlXGnz8j",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:20:51.457Z",
+        "updatedAt": "2019-04-19T21:21:09.625Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2019-04-19T21:21:09.625Z",
+        "firstPublishedAt": "2019-04-19T21:21:02.208Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "foodCategory"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Specialities"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4gSDqPcFPdnselV7dXZuMj",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:21:29.090Z",
+        "updatedAt": "2019-04-19T21:21:34.196Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-04-19T21:21:34.196Z",
+        "firstPublishedAt": "2019-04-19T21:21:34.196Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "foodCategory"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Breakfast"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "3bsfpm4himjXtZsq1ZcRX9",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:21:38.290Z",
+        "updatedAt": "2019-04-19T21:21:43.647Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-04-19T21:21:43.647Z",
+        "firstPublishedAt": "2019-04-19T21:21:43.647Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "foodCategory"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Burritos"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4ZYiHI4C5OYczw1rJoq0h7",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:22:04.737Z",
+        "updatedAt": "2019-04-19T21:32:40.751Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 63,
+        "publishedAt": "2019-04-19T21:32:40.751Z",
+        "firstPublishedAt": "2019-04-19T21:22:49.899Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 64,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menuItem"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": " Soft Taco Supreme®"
+        },
+        "description": {
+          "en-US": "Instead of a tough corn shell, the Soft Taco Supreme® has a warm, flour tortilla. It’s so soft, it exclusively listens to Toronto hip-hop. Dreamy. Soft. Delicious."
+        },
+        "categories": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5up1qoN874nkkWNyAGXmra"
+              }
+            }
+          ]
+        },
+        "calories": {
+          "en-US": 210
+        },
+        "price": {
+          "en-US": "1.79"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4QS3BRlulRA6903Vt9FXeT"
+            }
+          }
+        },
+        "mealDayPart": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1mfKgRHO6DcfSnEnwfZCZc"
+            }
+          }
+        },
+        "infoHeader": {
+          "en-US": "THE SOFTER SIDE OF THE SOFT TACO"
+        },
+        "infoSimple": {
+          "en-US": "While the Soft Taco is, you guessed it, soft. The Soft Taco Supreme® is even softer, but totally owns it."
+        },
+        "infoDetailed": {
+          "en-US": "Similar to the infamous Crunchy Taco Supreme® being that gym guy pumping iron and walking around the gym being all intimidating and what not (we all know who they are - and there are typically multiple of them in the same vicinity of the gym). But this description is all about the Soft Taco Supreme®. Don’t get its soft exterior twisted. It is also known to frequent the gym and pump some major iron. More like 20 pounders and not the 200 you see the Crunchy Taco Supreme® curl, but everyone’s gotta start somewhere. After a good gym sesh, you’ll see the Soft Taco Supreme® walk out with the most confidence, like he’s been in the gym challenging Hercules all morning.\n\nThe Soft Taco Supreme® may spend every morning in the gym, but it also enjoys getting its fix of cardio with a nice brisk walk on the beach and listening to the waves crash the shore. A true taco who knows what he likes. He owns it, and doesn’t care what anyone thinks. As it should be. Some will say he is too soft, but he doesn’t care. He’s more of a role model than anything. Why do you think the Soft Taco started to exclusively listen to Toronto hip-hop (sorry, Canada) 80's power ballads. That’s right. Learned it all from the Soft Taco Supreme®.\n\nHaving feelings is the new “it” thing, people. This Soft Taco that you are currently reading about is supreme, which means he can kind of do anything he wants. The Soft Taco Supreme® does what the Soft Taco Supreme® wants to do. Feelings and all. A true softy."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "1mfKgRHO6DcfSnEnwfZCZc",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:27:34.033Z",
+        "updatedAt": "2019-04-19T21:28:10.045Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-04-19T21:28:10.045Z",
+        "firstPublishedAt": "2019-04-19T21:28:10.045Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "mealDayPart"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "All Day"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "5Q2r6eZWfKq6CbrwMXDADe",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:31:54.126Z",
+        "updatedAt": "2019-04-19T21:46:58.398Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2019-04-19T21:46:58.398Z",
+        "firstPublishedAt": "2019-04-19T21:46:58.398Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menuItem"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Shredded Chicken Burrito"
+        },
+        "description": {
+          "en-US": "A warm flour tortilla filled with tender shredded chicken, Latin rice, avocado ranch dressing, and real cheddar cheese? In terms of wrapped meals, the Shredded Chicken Burrito is perfect."
+        },
+        "categories": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3bsfpm4himjXtZsq1ZcRX9"
+              }
+            }
+          ]
+        },
+        "calories": {
+          "en-US": 420
+        },
+        "price": {
+          "en-US": "2.39"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4g94PRlQ6BOuWPzrg3nWY9"
+            }
+          }
+        },
+        "mealDayPart": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1mfKgRHO6DcfSnEnwfZCZc"
+            }
+          }
+        },
+        "infoHeader": {
+          "en-US": "MORE LIKE SHREDDING CHICKEN BURRITO"
+        },
+        "infoSimple": {
+          "en-US": "A warm flour tortilla filled with tender shredded chicken, seasoned rice, avocado ranch dressing, and real cheddar cheese? Boom. Shredded Chicken Burrito. Duh."
+        },
+        "infoDetailed": {
+          "en-US": "In terms of wrapped meals, the Shredded Chicken Burrito is almost perfect. Almost. However, the one thing that might make this guy a little better is a different tense. Slap an “ing” on it and let’s make it in the present tense. Let’s live in the present people and not dwell on the past. Who’s with me? Listen, every time we take a bite of the Shredded Chicken Burrito, we can’t help but think about what this burrito would be like if it was shreddING instead of shredded. Can you imagine? Every time you took a bite, the chicken just ripped a guitar solo all the way down into your stomach? Or like, it caught a massive wave of Mountain Dew® Baja Blast™ down your throat, and surfed a gnarly beverage barrel all the way to your tummy? And like, all the other food is just sitting on your stomach shore being like “Whoa, that new chicken totally shreds!” and the Shredded Chicken Burrito rips off its sunglasses and goes “Exactly,” then takes the next wave straight into your bloodstream. Or if the Shredded Chicken Burrito was shredding down a mountain with fresh pow pow doing 360’s off the jumps. The shredding chicken burrito would be no stranger to extreme sports. But with a name like that, we wouldn’t expect anything else.\n\nBut, we like the Shredded Chicken Burrito just the way it is. It doesn’t need to change for us. We accept it for being its true self even if it has given up all its crazy athleticism and only knows how to shred in the past tense and not the active tense."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "7IiM0CBGCrdyWbWwAnMcyE",
+        "type": "Entry",
+        "createdAt": "2019-04-19T21:48:27.819Z",
+        "updatedAt": "2019-04-19T22:52:57.952Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2019-04-19T22:52:57.952Z",
+        "firstPublishedAt": "2019-04-19T22:52:57.952Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menuItem"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Nacho Cheese Doritos® Locos Taco"
+        },
+        "description": {
+          "en-US": "Today, you decided to wish for a taco made out of Doritos® tortilla chips."
+        },
+        "categories": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5up1qoN874nkkWNyAGXmra"
+              }
+            }
+          ]
+        },
+        "calories": {
+          "en-US": 160
+        },
+        "price": {
+          "en-US": "1.89"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "7AP6ULxmbwS5qIJrv2ABQg"
+            }
+          }
+        },
+        "mealDayPart": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1mfKgRHO6DcfSnEnwfZCZc"
+            }
+          }
+        },
+        "infoHeader": {
+          "en-US": "WHERE THE DREAM BEGAN"
+        },
+        "infoSimple": {
+          "en-US": "As you already know, the Nacho Cheese Doritos® Locos Tacos Supreme® all started with a dream. But with every dream, there’s always that starting point."
+        },
+        "infoDetailed": {
+          "en-US": "You know, the leap off. The idea that begins small but eventually launches you into a much greater thing. It’s like the diving board at the neighborhood pool that you jump on with all your strength so you can nail the perfect dive. Or cannonball and jackknife if you’re feeling wild. But seriously, something as huge as the Nacho Cheese Doritos® Locos Taco Supreme had to start somewhere, as we all do and did. Cue in the Nacho Cheese Doritos® Locos Taco. That’s right. Subtract the supreme, and that’s where it all began.\n\nAmidst dreaming of the Nacho Cheese Doritos® Locos Taco Supreme, the same kid in the class was actually a multitasker, as we all often are during class. Shh, your teacher is looking at you right now as you’re reading this so pretend you’re paying attention to her lecture and slowly look up away from your screen and look puzzled at the whiteboard as if you’re thinking about her thought provoking lessons. But whatever you do, don’t make eye contact with her.\n\nPhew. We’re in the clear. She totally bought it. So as we were saying, the Nacho Cheese Doritos® Locos Taco Supreme started as the Nacho Cheese Doritos® Locos Taco. You get the same great taste of a Crunchy Taco (just like its supreme version) but with the shell made out of Doritos® tortilla chips. That’s the Nacho Cheese Doritos® Locos Taco for you. See, even the Nacho Cheese Doritos® Locos Taco Supreme had to start somewhere. It all started with a dream. If that doesn’t give us all hope then we don’t know what will. By the way, if your teacher pulls you aside after class, just bring her a Nacho Cheese Doritos® Locos Taco. We’re pretty sure that will get you out of any situation."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4e4R7Pxfgkk08FcWiyFOaq",
+        "type": "Entry",
+        "createdAt": "2019-04-19T22:57:45.786Z",
+        "updatedAt": "2019-04-19T23:00:39.734Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 18,
+        "publishedAt": "2019-04-19T23:00:39.734Z",
+        "firstPublishedAt": "2019-04-19T23:00:39.734Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 19,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menuItem"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Power Menu Bowl"
+        },
+        "description": {
+          "en-US": "Premium meat, guacamole, pico de gallo, slow-simmered black beans, crisp romaine lettuce, and Latin rice, packed into an seriously powerful bowl. You get so much protein that you’re basically getting a real-life character upgrade for lunch, and you don’t even have to head-butt a box of bricks or fight your boss to get it."
+        },
+        "categories": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4gaXFGnfNq8zQxZlXGnz8j"
+              }
+            }
+          ]
+        },
+        "calories": {
+          "en-US": 500
+        },
+        "price": {
+          "en-US": "4.99"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1K2OnLQBylBWutEfmi0QPQ"
+            }
+          }
+        },
+        "mealDayPart": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "1mfKgRHO6DcfSnEnwfZCZc"
+            }
+          }
+        },
+        "infoHeader": {
+          "en-US": "A REAL LIFE POWER-UP"
+        },
+        "infoSimple": {
+          "en-US": "You know how in pretty much every video game, you can upgrade your character with a power-up? Yeah, we’re referring to the Power Menu Bowl as that upgrade."
+        },
+        "infoDetailed": {
+          "en-US": "The Power Menu Bowl is that glimmer of hope that is off in the distance and you have to fly, jump, and soar from platform to platform to get that extra boost. No one said it would be easy, but they did say it’d be worth it. Good thing for you, it is both easy for you to get and worth it (but that can be our little secret just between us, because we’re cool like that). You get so much protein with the Power Menu Bowl that you’re basically getting a real-life character upgrade for lunch, and you don’t even have to head-butt a box of bricks or fight your boss to get it. It may seem simple, just like that last level you were on, but we all know, it is anything but simple. It packs that punch. Not that kind of punch. Remember, we said you don’t have to fight your boss for this. It packs that punch to get you through and keep on moving. Rumor also has it that all that protein will get the princess in the castle to take notice. She knows what a good protein bowl looks like when she sees one. And do you think she would pass up an extra power-up? The answer is no. She definitely would not. She’d take that power-up just like she’d take a Power Menu Bowl."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "W5dDCRu1fD7YK0NWWwZ8O",
+        "type": "Entry",
+        "createdAt": "2019-04-19T23:00:56.942Z",
+        "updatedAt": "2019-04-19T23:03:13.896Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 23,
+        "publishedAt": "2019-04-19T23:03:13.896Z",
+        "firstPublishedAt": "2019-04-19T23:03:13.896Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 24,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "menuItem"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Grilled Breakfast Burrito"
+        },
+        "description": {
+          "en-US": "Why cereal? Because it was everything the little you could possibly ask for in breakfast: milk, sugary bite-­sized snacks, and probably marshmallows shaped like dinosaurs. Well, you’re older now, wiser, and have a more sophisticated palate. It’s time for you to swap those dinosaur-­shaped marshmallows for a burrito-shaped burrito full of eggs, breakfast meat, and nacho cheese sauce."
+        },
+        "categories": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4gSDqPcFPdnselV7dXZuMj"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3bsfpm4himjXtZsq1ZcRX9"
+              }
+            }
+          ]
+        },
+        "calories": {
+          "en-US": 340
+        },
+        "price": {
+          "en-US": "1.00"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "4Kw7AamrtxeBpQ4j1roHl6"
+            }
+          }
+        },
+        "mealDayPart": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "5cmucgQKMTg12MutUhqjxU"
+            }
+          }
+        },
+        "infoHeader": {
+          "en-US": "THE OFFICIAL ADULT BREAKFAST OF SATURDAY MORNINGS"
+        },
+        "infoSimple": {
+          "en-US": "When you were a kid, you used to sit five feet from the television and eat cereal while your favorite cartoons serenaded your Saturday mornings while dad, being a little more sophisticated, sat at the table eating a Grilled Breakfast Burrito. You always wanted to be like him one day. But for the time being, your cereal was all you needed (or so you thought)."
+        },
+        "infoDetailed": {
+          "en-US": "Why cereal, though? Why did you get stuck eating cereal? You wouldn’t refer to it being “stuck” because it was everything the little you could possibly ask for in breakfast: milk, sugary bite-­sized snacks, and probably marshmallows shaped like dinosaurs. And you knew what every shaped dinosaur was. So I guess when you look at it, your cereal was a pretty good choice for you when you were younger. Your cereal was educating you and you didn’t even know it. Yeah, it made you pretty smart too because, now, you’re totally eyeballing the Grilled Breakfast Burrito and we’re not judging. Now that you’re older, wiser, and have a more sophisticated palate, put that eyeballing to action and get yourself a Grilled Breakfast Burrito and remember all those memories you had while dad was eating one. It’s time for you to swap those dinosaur-­shaped marshmallows (we know, they were great. But sometimes when something is so great, you just gotta let it go or some mushy stuff like that- let it be free) because, just between us, you’re totally trading up anyways. You’re trading up for a burrito-shaped burrito full of your choice of bacon or sausage, eggs, and nacho cheese sauce. Sounds better than cereal, huh? We knew you’d see the light sooner or later. So sit farther back from the television, maybe seven feet, watch...cartoons, and eat breakfast like an adult because that’s what you are now… an adult and the Grilled Breakfast Burrito compliments that so well."
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "5cmucgQKMTg12MutUhqjxU",
+        "type": "Entry",
+        "createdAt": "2019-04-19T23:02:28.462Z",
+        "updatedAt": "2019-04-19T23:02:34.120Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2019-04-19T23:02:34.120Z",
+        "firstPublishedAt": "2019-04-19T23:02:34.120Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "mealDayPart"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Breakfast"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "EFTcCPFWDibtYeteIkioc",
+        "type": "Entry",
+        "createdAt": "2019-04-19T23:03:33.452Z",
+        "updatedAt": "2019-04-24T16:46:20.587Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 67,
+        "publishedAt": "2019-04-24T16:46:20.587Z",
+        "firstPublishedAt": "2019-04-19T23:07:03.456Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 68,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "storeLocation"
+          }
+        }
+      },
+      "fields": {
+        "id": {
+          "en-US": 32944
+        },
+        "streetAddress": {
+          "en-US": "4933 SE Powell Blvd"
+        },
+        "city": {
+          "en-US": "Portland"
+        },
+        "state": {
+          "en-US": "OR"
+        },
+        "zipCode": {
+          "en-US": "97215"
+        },
+        "phoneNumber": {
+          "en-US": "(503) 777-9662"
+        },
+        "geoLocation": {
+          "en-US": {
+            "lon": -122.61163779999998,
+            "lat": 45.4979107
+          }
+        },
+        "profileType": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "2or6fQAk9ENcQ8FLhtiqpw"
+            }
+          }
+        },
+        "mealDayPartsServedHere": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1mfKgRHO6DcfSnEnwfZCZc"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "5cmucgQKMTg12MutUhqjxU"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "3MoqCtLLfFN2DXc4wTgDsr"
+              }
+            }
+          ]
+        },
+        "promotions": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "wkIG0L83Kiy2UH9YbxaDm"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "4Fd5DE0EcsAE9bNluITQiq"
+              }
+            }
+          ]
+        },
+        "aboutText": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Visit us or order online at Taco Bell in Portland, OR",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-3"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Find your nearby Taco Bell at 4933 SE Powell Blvd in Portland. We are open early with breakfast hours and if you find yourself out and about late at night, you can still order at our ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://locations.tacobell.com/or/portland/4933-se-powell-blvd/drive-thru.html"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "drive-thru",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". You can also order online and skip our line inside. We're serving all your favorite menu items, from classic ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "3bsfpm4himjXtZsq1ZcRX9",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "burritos",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "5up1qoN874nkkWNyAGXmra",
+                          "type": "Link",
+                          "linkType": "Entry"
+                        }
+                      }
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "tacos",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "entry-hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", to new favorites like the ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.tacobell.com/food/specialties/crunchwrap-supreme?store=032944"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Crunchwrap Supreme®",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.tacobell.com/food/specialties/fiesta-taco-salad?store=032944"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Fiesta Taco Salad",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", and ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.tacobell.com/food/specialties/chalupa-supreme?store=032944"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Chalupa Supreme",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ". From breakfast to late night, Taco Bell serves made-to-order and customizable tacos and burritos, vegetarian options, drinks and sweets. Make sure to visit our ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://www.tacobell.com/locations?store=032944"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Store Locator",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " to find the Taco Bell® breakfast closest to you. Our Dollar Cravings menu features classics like Cheesy Bean and Rice Burrito, Shredded Chicken Mini Quesadilla, Triple Layer Nachos, and breakfast favorites like Cinnabon Delights®. If you're looking for a delicious choice for ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://locations.tacobell.com/or/portland/4933-se-powell-blvd/mexican-food.html"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "mexican inspired food",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " or ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://locations.tacobell.com/or/portland/4933-se-powell-blvd/fast-food.html"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "fast food",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " close to the Portland-area, Taco Bell is nearby! So come inside or visit our ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                      "uri": "https://locations.tacobell.com/or/portland/4933-se-powell-blvd/drive-thru.html"
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "drive-thru",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "hyperlink"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " at this Portland Taco Bell location.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "3MoqCtLLfFN2DXc4wTgDsr",
+        "type": "Entry",
+        "createdAt": "2019-04-19T23:06:37.468Z",
+        "updatedAt": "2019-04-19T23:06:43.243Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2019-04-19T23:06:43.243Z",
+        "firstPublishedAt": "2019-04-19T23:06:43.243Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "mealDayPart"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Happier Hour"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "2or6fQAk9ENcQ8FLhtiqpw",
+        "type": "Entry",
+        "createdAt": "2019-04-24T16:45:33.662Z",
+        "updatedAt": "2019-04-24T16:52:31.400Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-04-24T16:52:31.400Z",
+        "firstPublishedAt": "2019-04-24T16:45:42.723Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "restaurantProfileType"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Standard"
+        },
+        "description": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "To celebrate the grand expansion, the brand is giving out free Doritos® Locos Tacos",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Irvine, Calif. (September 24, 2018)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " – Two years since its grand opening on the Las Vegas Strip, Taco Bell’s busiest location unveils their grand expansion today. The brand, along with franchise partners Diversified Restaurant Group, have also announced that due to the immense success of the first Vegas Cantina, they will be opening a second Cantina location on historic Fremont Street in Downtown Las Vegas.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "With an additional 1,200 square feet, the flagship’s expansion adds a brand-new second floor private space with Las Vegas Strip views, serviced by a new second floor bar capable of hosting larger weddings and additional special events. On the first floor, guests will find a larger interior dining area, retail space, and an expanded kitchen and back of house area. The newly renovated flagship restaurant will also feature state-of-the-art self-order kiosks, designed to ensure a seamless and customized customer ordering experience, all at the touch of a button. To celebrate the expansion, the company’s flagship location will be giving away commemorative merchandise and a Doritos® Locos Taco to the first 100 fans starting at 8pm on Tuesday, September 25.*",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since its opening in November of 2016, the flagship Cantina location has redefined the customer experience in the Quick Service Restaurant (QSR) space, including 24-hour service, DJ entertainment, VIP lounges, weddings, retail experience and a Freeze wall; all of which contributed to its success and desire to expand and meet increased consumer demands.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "It’s that consumer demand that leads to Taco Bell eyeing a second Cantina location in Las Vegas, this time on historic Fremont Street. Slated for a 2019 opening, the 6,000 square foot location would take over a portion of the former El Portal Theatre which closed in the late 1970’s. The new Fremont Street restaurant will have an open-air design to it, similar to the flagship restaurant, perfect for guests who enjoy indoor-outdoor dining experiences. It also has a never-before-seen second floor entry, which guests will access via a lit-up escalator from the first-floor sidewalk. Upon entering, guests will be welcomed by the restaurant’s open kitchen, a Cantina staple, which allows guests to see their customized menu items freshly prepared in-front of their eyes. Customers can then take their open-plated meals to any of the seats in the restaurant, either inside, or on the open-air patio. The restaurant follows the brand’s goal to make sure each Cantina restaurant is designed in a unique way that represents the local community around it.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "“We've seen what happens when Taco Bell Cantina meets Las Vegas, and we're excited to bring that experience to historic Fremont Street along with our fantastic franchise partners,\" said Amanda Clark, Head of North American Development. “Our continued growth in urban, high foot traffic destinations and downtowns are a big piece of the growth puzzle as we grow from 7,000 to 9,000 restaurants over the next four years.\"",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since launching the elevated urban experience in 2015, Taco Bell has opened nearly 30 restaurants in urban spaces, 17 Cantina and 13 Urban In-line restaurants, across the United States. The brand plans to continue their expansion into urban and downtown neighborhoods with the goal of opening nearly 50 more urban restaurants in 2019. These locations are part of the brand’s plan to have 8,000 U.S. restaurants total by 2022, at least 300 of which will be urban concepts.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "*Only good at 3717 S Las Vegas Blvd., Suite 140-a, Las Vegas, NV 89109. Limit one commemorative item and one taco per person, while supplies last. No substitutions, exchanges or cash equivalent will be provided.",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Taco Bell Corp",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "., a subsidiary of Yum! Brands, Inc. (NYSE: YUM), is the world's leading Mexican-inspired quick service restaurant (QSR) brand. Taco Bell serves made-to-order and customizable tacos and burritos and other specialties with bold flavors, quality ingredients, breakthrough value, and best-in-class customer service to over 40 million customers weekly across the globe. There are currently more than 430 Taco Bell restaurants across 27 countries outside of the United States, with the goal of expanding the brand’s international presence to 1,000 restaurants by 2022. The Company and its franchisees operate more than 7,000 restaurants, generating more than $9B in sales. By 2022, the brand plans to become a $15B company in global system sales with 9,000 restaurants globally. For information about Taco Bell, visit www.TacoBell.com/News or find us on social media. Like: Facebook.com/tacobell -- Follow: @TacoBell (Twitter), tacobell (Instagram) and tacobell (Snapchat) -- Subscribe: YouTube.com/tacobell – Explore: ta.co",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Diversified Restaurant Group, LLC",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\nDiversified Restaurant Group, LLC, a privately held company, owns and operates over 200 Taco Bell franchised locations in four states, including the brand’s flagship Cantina on the Las Vegas Strip. For more information, contact SG Ellison, President, at sg@acventures.com or (707) 935-3700.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "5pnAQuTWF3yG98HcaN6kkt",
+        "type": "Entry",
+        "createdAt": "2019-04-24T16:45:49.377Z",
+        "updatedAt": "2019-04-24T16:51:37.599Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 14,
+        "publishedAt": "2019-04-24T16:51:37.599Z",
+        "firstPublishedAt": "2019-04-24T16:45:55.129Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 15,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "restaurantProfileType"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Cantina"
+        },
+        "description": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "To celebrate the grand expansion, the brand is giving out free Doritos® Locos Tacos",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Irvine, Calif. (September 24, 2018)",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": " – Two years since its grand opening on the Las Vegas Strip, Taco Bell’s busiest location unveils their grand expansion today. The brand, along with franchise partners Diversified Restaurant Group, have also announced that due to the immense success of the first Vegas Cantina, they will be opening a second Cantina location on historic Fremont Street in Downtown Las Vegas.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "With an additional 1,200 square feet, the flagship’s expansion adds a brand-new second floor private space with Las Vegas Strip views, serviced by a new second floor bar capable of hosting larger weddings and additional special events. On the first floor, guests will find a larger interior dining area, retail space, and an expanded kitchen and back of house area. The newly renovated flagship restaurant will also feature state-of-the-art self-order kiosks, designed to ensure a seamless and customized customer ordering experience, all at the touch of a button. To celebrate the expansion, the company’s flagship location will be giving away commemorative merchandise and a Doritos® Locos Taco to the first 100 fans starting at 8pm on Tuesday, September 25.*",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Since its opening in November of 2016, the flagship Cantina location has redefined the customer experience in the Quick Service Restaurant (QSR) space, including 24-hour service, DJ entertainment, VIP lounges, weddings, retail experience and a Freeze wall; all of which contributed to its success and desire to expand and meet increased consumer demands.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "It’s that consumer demand that leads to Taco Bell eyeing a second Cantina location in Las Vegas, this time on historic Fremont Street. Slated for a 2019 opening, the 6,000 square foot location would take over a portion of the former El Portal Theatre which closed in the late 1970’s. The new Fremont Street restaurant will have an open-air design to it, similar to the flagship restaurant, perfect for guests who enjoy indoor-outdoor dining experiences. It also has a never-before-seen second floor entry, which guests will access via a lit-up escalator from the first-floor sidewalk. Upon entering, guests will be welcomed by the restaurant’s open kitchen, a Cantina staple, which allows guests to see their customized menu items freshly prepared in-front of their eyes. Customers can then take their open-plated meals to any of the seats in the restaurant, either inside, or on the open-air patio. The restaurant follows the brand’s goal to make sure each Cantina restaurant is designed in a unique way that represents the local community around it.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "“We've seen what happens when Taco Bell Cantina meets Las Vegas, and we're excited to bring that experience to historic Fremont Street along with our fantastic franchise partners,\" said Amanda Clark, Head of North American Development. “Our continued growth in urban, high foot traffic destinations and downtowns are a big piece of the growth puzzle as we grow from 7,000 to 9,000 restaurants over the next four years.\"",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Since launching the elevated urban experience in 2015, Taco Bell has opened nearly 30 restaurants in urban spaces, 17 Cantina and 13 Urban In-line restaurants, across the United States. The brand plans to continue their expansion into urban and downtown neighborhoods with the goal of opening nearly 50 more urban restaurants in 2019. These locations are part of the brand’s plan to have 8,000 U.S. restaurants total by 2022, at least 300 of which will be urban concepts.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "value": "*Only good at 3717 S Las Vegas Blvd., Suite 140-a, Las Vegas, NV 89109. Limit one commemorative item and one taco per person, while supplies last. No substitutions, exchanges or cash equivalent will be provided.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "About Taco Bell Corp",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "., a subsidiary of Yum! Brands, Inc. (NYSE: YUM), is the world's leading Mexican-inspired quick service restaurant (QSR) brand. Taco Bell serves made-to-order and customizable tacos and burritos and other specialties with bold flavors, quality ingredients, breakthrough value, and best-in-class customer service to over 40 million customers weekly across the globe. There are currently more than 430 Taco Bell restaurants across 27 countries outside of the United States, with the goal of expanding the brand’s international presence to 1,000 restaurants by 2022. The Company and its franchisees operate more than 7,000 restaurants, generating more than $9B in sales. By 2022, the brand plans to become a $15B company in global system sales with 9,000 restaurants globally. For information about Taco Bell, visit www.TacoBell.com/News or find us on social media. Like: Facebook.com/tacobell -- Follow: @TacoBell (Twitter), tacobell (Instagram) and tacobell (Snapchat) -- Subscribe: YouTube.com/tacobell – Explore: ta.co",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "About Diversified Restaurant Group, LLC",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\nDiversified Restaurant Group, LLC, a privately held company, owns and operates over 200 Taco Bell franchised locations in four states, including the brand’s flagship Cantina on the Las Vegas Strip. For more information, contact SG Ellison, President, at sg@acventures.com or (707) 935-3700.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "76pcqSIy9cW5A5dqhyeSXG",
+        "type": "Entry",
+        "createdAt": "2019-04-24T16:46:00.943Z",
+        "updatedAt": "2019-04-24T16:52:24.988Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-04-24T16:52:24.988Z",
+        "firstPublishedAt": "2019-04-24T16:46:06.611Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "restaurantProfileType"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Express"
+        },
+        "description": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "To celebrate the grand expansion, the brand is giving out free Doritos® Locos Tacos",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Irvine, Calif. (September 24, 2018)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " – Two years since its grand opening on the Las Vegas Strip, Taco Bell’s busiest location unveils their grand expansion today. The brand, along with franchise partners Diversified Restaurant Group, have also announced that due to the immense success of the first Vegas Cantina, they will be opening a second Cantina location on historic Fremont Street in Downtown Las Vegas.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "With an additional 1,200 square feet, the flagship’s expansion adds a brand-new second floor private space with Las Vegas Strip views, serviced by a new second floor bar capable of hosting larger weddings and additional special events. On the first floor, guests will find a larger interior dining area, retail space, and an expanded kitchen and back of house area. The newly renovated flagship restaurant will also feature state-of-the-art self-order kiosks, designed to ensure a seamless and customized customer ordering experience, all at the touch of a button. To celebrate the expansion, the company’s flagship location will be giving away commemorative merchandise and a Doritos® Locos Taco to the first 100 fans starting at 8pm on Tuesday, September 25.*",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since its opening in November of 2016, the flagship Cantina location has redefined the customer experience in the Quick Service Restaurant (QSR) space, including 24-hour service, DJ entertainment, VIP lounges, weddings, retail experience and a Freeze wall; all of which contributed to its success and desire to expand and meet increased consumer demands.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "It’s that consumer demand that leads to Taco Bell eyeing a second Cantina location in Las Vegas, this time on historic Fremont Street. Slated for a 2019 opening, the 6,000 square foot location would take over a portion of the former El Portal Theatre which closed in the late 1970’s. The new Fremont Street restaurant will have an open-air design to it, similar to the flagship restaurant, perfect for guests who enjoy indoor-outdoor dining experiences. It also has a never-before-seen second floor entry, which guests will access via a lit-up escalator from the first-floor sidewalk. Upon entering, guests will be welcomed by the restaurant’s open kitchen, a Cantina staple, which allows guests to see their customized menu items freshly prepared in-front of their eyes. Customers can then take their open-plated meals to any of the seats in the restaurant, either inside, or on the open-air patio. The restaurant follows the brand’s goal to make sure each Cantina restaurant is designed in a unique way that represents the local community around it.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "“We've seen what happens when Taco Bell Cantina meets Las Vegas, and we're excited to bring that experience to historic Fremont Street along with our fantastic franchise partners,\" said Amanda Clark, Head of North American Development. “Our continued growth in urban, high foot traffic destinations and downtowns are a big piece of the growth puzzle as we grow from 7,000 to 9,000 restaurants over the next four years.\"",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since launching the elevated urban experience in 2015, Taco Bell has opened nearly 30 restaurants in urban spaces, 17 Cantina and 13 Urban In-line restaurants, across the United States. The brand plans to continue their expansion into urban and downtown neighborhoods with the goal of opening nearly 50 more urban restaurants in 2019. These locations are part of the brand’s plan to have 8,000 U.S. restaurants total by 2022, at least 300 of which will be urban concepts.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "*Only good at 3717 S Las Vegas Blvd., Suite 140-a, Las Vegas, NV 89109. Limit one commemorative item and one taco per person, while supplies last. No substitutions, exchanges or cash equivalent will be provided.",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Taco Bell Corp",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "., a subsidiary of Yum! Brands, Inc. (NYSE: YUM), is the world's leading Mexican-inspired quick service restaurant (QSR) brand. Taco Bell serves made-to-order and customizable tacos and burritos and other specialties with bold flavors, quality ingredients, breakthrough value, and best-in-class customer service to over 40 million customers weekly across the globe. There are currently more than 430 Taco Bell restaurants across 27 countries outside of the United States, with the goal of expanding the brand’s international presence to 1,000 restaurants by 2022. The Company and its franchisees operate more than 7,000 restaurants, generating more than $9B in sales. By 2022, the brand plans to become a $15B company in global system sales with 9,000 restaurants globally. For information about Taco Bell, visit www.TacoBell.com/News or find us on social media. Like: Facebook.com/tacobell -- Follow: @TacoBell (Twitter), tacobell (Instagram) and tacobell (Snapchat) -- Subscribe: YouTube.com/tacobell – Explore: ta.co",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Diversified Restaurant Group, LLC",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\nDiversified Restaurant Group, LLC, a privately held company, owns and operates over 200 Taco Bell franchised locations in four states, including the brand’s flagship Cantina on the Las Vegas Strip. For more information, contact SG Ellison, President, at sg@acventures.com or (707) 935-3700.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "6UyrOPP7qjxz2zjerYkkMM",
+        "type": "Entry",
+        "createdAt": "2019-04-24T16:46:08.734Z",
+        "updatedAt": "2019-04-24T16:52:18.546Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-04-24T16:52:18.546Z",
+        "firstPublishedAt": "2019-04-24T16:46:13.449Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "restaurantProfileType"
+          }
+        }
+      },
+      "fields": {
+        "name": {
+          "en-US": "Urban"
+        },
+        "description": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "To celebrate the grand expansion, the brand is giving out free Doritos® Locos Tacos",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Irvine, Calif. (September 24, 2018)",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": " – Two years since its grand opening on the Las Vegas Strip, Taco Bell’s busiest location unveils their grand expansion today. The brand, along with franchise partners Diversified Restaurant Group, have also announced that due to the immense success of the first Vegas Cantina, they will be opening a second Cantina location on historic Fremont Street in Downtown Las Vegas.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "With an additional 1,200 square feet, the flagship’s expansion adds a brand-new second floor private space with Las Vegas Strip views, serviced by a new second floor bar capable of hosting larger weddings and additional special events. On the first floor, guests will find a larger interior dining area, retail space, and an expanded kitchen and back of house area. The newly renovated flagship restaurant will also feature state-of-the-art self-order kiosks, designed to ensure a seamless and customized customer ordering experience, all at the touch of a button. To celebrate the expansion, the company’s flagship location will be giving away commemorative merchandise and a Doritos® Locos Taco to the first 100 fans starting at 8pm on Tuesday, September 25.*",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since its opening in November of 2016, the flagship Cantina location has redefined the customer experience in the Quick Service Restaurant (QSR) space, including 24-hour service, DJ entertainment, VIP lounges, weddings, retail experience and a Freeze wall; all of which contributed to its success and desire to expand and meet increased consumer demands.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "It’s that consumer demand that leads to Taco Bell eyeing a second Cantina location in Las Vegas, this time on historic Fremont Street. Slated for a 2019 opening, the 6,000 square foot location would take over a portion of the former El Portal Theatre which closed in the late 1970’s. The new Fremont Street restaurant will have an open-air design to it, similar to the flagship restaurant, perfect for guests who enjoy indoor-outdoor dining experiences. It also has a never-before-seen second floor entry, which guests will access via a lit-up escalator from the first-floor sidewalk. Upon entering, guests will be welcomed by the restaurant’s open kitchen, a Cantina staple, which allows guests to see their customized menu items freshly prepared in-front of their eyes. Customers can then take their open-plated meals to any of the seats in the restaurant, either inside, or on the open-air patio. The restaurant follows the brand’s goal to make sure each Cantina restaurant is designed in a unique way that represents the local community around it.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "“We've seen what happens when Taco Bell Cantina meets Las Vegas, and we're excited to bring that experience to historic Fremont Street along with our fantastic franchise partners,\" said Amanda Clark, Head of North American Development. “Our continued growth in urban, high foot traffic destinations and downtowns are a big piece of the growth puzzle as we grow from 7,000 to 9,000 restaurants over the next four years.\"",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Since launching the elevated urban experience in 2015, Taco Bell has opened nearly 30 restaurants in urban spaces, 17 Cantina and 13 Urban In-line restaurants, across the United States. The brand plans to continue their expansion into urban and downtown neighborhoods with the goal of opening nearly 50 more urban restaurants in 2019. These locations are part of the brand’s plan to have 8,000 U.S. restaurants total by 2022, at least 300 of which will be urban concepts.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "*Only good at 3717 S Las Vegas Blvd., Suite 140-a, Las Vegas, NV 89109. Limit one commemorative item and one taco per person, while supplies last. No substitutions, exchanges or cash equivalent will be provided.",
+                    "marks": [
+                      {
+                        "type": "italic"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Taco Bell Corp",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "., a subsidiary of Yum! Brands, Inc. (NYSE: YUM), is the world's leading Mexican-inspired quick service restaurant (QSR) brand. Taco Bell serves made-to-order and customizable tacos and burritos and other specialties with bold flavors, quality ingredients, breakthrough value, and best-in-class customer service to over 40 million customers weekly across the globe. There are currently more than 430 Taco Bell restaurants across 27 countries outside of the United States, with the goal of expanding the brand’s international presence to 1,000 restaurants by 2022. The Company and its franchisees operate more than 7,000 restaurants, generating more than $9B in sales. By 2022, the brand plans to become a $15B company in global system sales with 9,000 restaurants globally. For information about Taco Bell, visit www.TacoBell.com/News or find us on social media. Like: Facebook.com/tacobell -- Follow: @TacoBell (Twitter), tacobell (Instagram) and tacobell (Snapchat) -- Subscribe: YouTube.com/tacobell – Explore: ta.co",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              },
+              {
+                "nodeType": "paragraph",
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "About Diversified Restaurant Group, LLC",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  },
+                  {
+                    "nodeType": "text",
+                    "value": "\nDiversified Restaurant Group, LLC, a privately held company, owns and operates over 200 Taco Bell franchised locations in four states, including the brand’s flagship Cantina on the Las Vegas Strip. For more information, contact SG Ellison, President, at sg@acventures.com or (707) 935-3700.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ],
+                "data": {
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "6q3yG3z4JcayE7hyF95Qln",
+        "type": "Asset",
+        "createdAt": "2019-04-19T20:24:46.888Z",
+        "updatedAt": "2019-04-19T20:25:05.206Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T20:25:05.206Z",
+        "firstPublishedAt": "2019-04-19T20:25:05.206Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "PPEveryday-offer-desktop"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/6q3yG3z4JcayE7hyF95Qln/585fa896a9891b9a9c57b9941fdd6486/PPEveryday-offer-desktop.jpg",
+            "details": {
+              "size": 331380,
+              "image": {
+                "width": 1025,
+                "height": 400
+              }
+            },
+            "fileName": "PPEveryday-offer-desktop.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "5ZSINlpEd25udWKsas0Bfv",
+        "type": "Asset",
+        "createdAt": "2019-04-19T20:26:37.851Z",
+        "updatedAt": "2019-04-19T20:26:57.096Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T20:26:57.096Z",
+        "firstPublishedAt": "2019-04-19T20:26:57.096Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "MDew-offer-desktop"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/5ZSINlpEd25udWKsas0Bfv/e9308736d19f3d20d4c2a63f52e13138/MDew-offer-desktop.jpg",
+            "details": {
+              "size": 273708,
+              "image": {
+                "width": 1025,
+                "height": 350
+              }
+            },
+            "fileName": "MDew-offer-desktop.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4QS3BRlulRA6903Vt9FXeT",
+        "type": "Asset",
+        "createdAt": "2019-04-19T21:26:51.451Z",
+        "updatedAt": "2019-04-19T21:27:03.488Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T21:27:03.488Z",
+        "firstPublishedAt": "2019-04-19T21:27:03.488Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "22111 soft taco supreme 1025x480"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/4QS3BRlulRA6903Vt9FXeT/05991d1e84a31dd207f1225ff7b25930/22111_soft_taco_supreme_1025x480.jpg",
+            "details": {
+              "size": 45188,
+              "image": {
+                "width": 1025,
+                "height": 480
+              }
+            },
+            "fileName": "22111_soft_taco_supreme_1025x480.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4g94PRlQ6BOuWPzrg3nWY9",
+        "type": "Asset",
+        "createdAt": "2019-04-19T21:44:35.310Z",
+        "updatedAt": "2019-04-19T21:44:47.891Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T21:44:47.891Z",
+        "firstPublishedAt": "2019-04-19T21:44:47.891Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "22453 shredded chicken burrito 1025x480"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/4g94PRlQ6BOuWPzrg3nWY9/6b73bd9002d5b8e53a9166b0f4a3c36b/22453_shredded_chicken_burrito_1025x480.jpg",
+            "details": {
+              "size": 44310,
+              "image": {
+                "width": 1025,
+                "height": 480
+              }
+            },
+            "fileName": "22453_shredded_chicken_burrito_1025x480.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "7AP6ULxmbwS5qIJrv2ABQg",
+        "type": "Asset",
+        "createdAt": "2019-04-19T21:49:19.711Z",
+        "updatedAt": "2019-04-19T22:46:40.228Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T22:46:40.228Z",
+        "firstPublishedAt": "2019-04-19T22:46:40.228Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "22172 nacho cheese doritos locos tacos 1025x480"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/7AP6ULxmbwS5qIJrv2ABQg/7316b1d3e4926fd336c37ff72fbd55ff/22172_nacho_cheese_doritos_locos_tacos_1025x480.jpg",
+            "details": {
+              "size": 55761,
+              "image": {
+                "width": 1025,
+                "height": 480
+              }
+            },
+            "fileName": "22172_nacho_cheese_doritos_locos_tacos_1025x480.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "1K2OnLQBylBWutEfmi0QPQ",
+        "type": "Asset",
+        "createdAt": "2019-04-19T22:59:19.797Z",
+        "updatedAt": "2019-04-19T22:59:30.720Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T22:59:30.720Z",
+        "firstPublishedAt": "2019-04-19T22:59:30.720Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "22488 power menu bowl 1025x480"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/1K2OnLQBylBWutEfmi0QPQ/10cb0f1dd762184cf1c4c79c3c5fdcfd/22488_power_menu_bowl_1025x480.jpg",
+            "details": {
+              "size": 55569,
+              "image": {
+                "width": 1025,
+                "height": 480
+              }
+            },
+            "fileName": "22488_power_menu_bowl_1025x480.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "id": "4Kw7AamrtxeBpQ4j1roHl6",
+        "type": "Asset",
+        "createdAt": "2019-04-19T23:01:54.526Z",
+        "updatedAt": "2019-04-19T23:02:17.581Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2019-04-19T23:02:17.581Z",
+        "firstPublishedAt": "2019-04-19T23:02:17.581Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "30077 grilled breakfast burrito 1025x480"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/p8n2b8w1uzso/4Kw7AamrtxeBpQ4j1roHl6/a7d626b208512812fef4ed8b592e9fa3/30077_grilled_breakfast_burrito_1025x480.jpg",
+            "details": {
+              "size": 40982,
+              "image": {
+                "width": 1025,
+                "height": 480
+              }
+            },
+            "fileName": "30077_grilled_breakfast_burrito_1025x480.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7zxXXZL5OpEucApHOwMELR",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "p8n2b8w1uzso"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "createdAt": "2019-04-18T21:43:48Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4nBMLBg2AZDDtagkOVKyNg"
+          }
+        },
+        "updatedAt": "2019-04-18T21:43:48Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+  ]
+}
